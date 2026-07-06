@@ -1,7 +1,7 @@
 [build]
-  publish = "frontend"
+  publish = "."
 
 [[redirects]]
   from = "/*"
-  to = "/frontend/index.html"
+  to = "/index.html"
   status = 200
