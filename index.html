@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mema AI | منصة عربية للبرومبتات وخدمات الذكاء الاصطناعي</title>
+  <meta name="description" content="Mema AI منصة عربية شاملة للبرومبتات الجاهزة وخدمات الذكاء الاصطناعي: سيرة ذاتية، محتوى، تسويق، دراسة، أعمال، وترجمة." />
+  <meta property="og:title" content="Mema AI | برومبتات وخدمات AI بالعربي" />
+  <meta property="og:description" content="استخدم الذكاء الاصطناعي بسهولة في العمل، الدراسة، المحتوى، والتسويق." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(217,70,239,0.22), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(14,165,233,0.14), transparent 36%),
+        #08080b;
+    }
+    .glass {
+      background: rgba(24,24,27,0.76);
+      border: 1px solid rgba(63,63,70,0.95);
+      backdrop-filter: blur(16px);
+    }
+    .soft-card { transition: .25s ease; }
+    .soft-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 35px rgba(217,70,239,.24);
+      border-color: rgba(217,70,239,.72);
+    }
+    .tag {
+      background: rgba(217,70,239,.14);
+      color: #f5d0fe;
+      border: 1px solid rgba(217,70,239,.34);
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="min-h-screen text-white">
+  <header class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/85 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+      <a href="#home" class="text-2xl font-black"><span class="text-fuchsia-400">Mema</span> AI</a>
+      <nav class="hidden lg:flex gap-6 text-sm text-zinc-300">
+        <a href="#home" class="hover:text-fuchsia-400">الرئيسية</a>
+        <a href="#prompts" class="hover:text-fuchsia-400">البرومبتات</a>
+        <a href="#services" class="hover:text-fuchsia-400">الخدمات</a>
+        <a href="#pricing" class="hover:text-fuchsia-400">الباقات</a>
+        <a href="#faq" class="hover:text-fuchsia-400">الأسئلة</a>
+        <a href="#contact" class="hover:text-fuchsia-400">تواصل</a>
+      </nav>
+      <a href="https://wa.me/97451257513" target="_blank" class="hidden md:inline-block bg-green-600 hover:bg-green-700 px-5 py-3 rounded-xl font-bold">واتساب</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="max-w-7xl mx-auto px-6 py-24 text-center">
+      <div class="inline-flex items-center gap-2 tag rounded-full px-4 py-2 mb-6 text-sm">✨ منصة عربية للبرومبتات وخدمات الذكاء الاصطناعي</div>
+      <h1 class="text-4xl md:text-6xl font-black leading-tight max-w-5xl mx-auto">حوّل الذكاء الاصطناعي إلى مساعد يومي في عملك، دراستك، ومشروعك</h1>
+      <p class="text-zinc-300 text-lg md:text-xl leading-9 max-w-4xl mx-auto mt-6">
+        Mema AI تجمع لك برومبتات جاهزة وخدمات عملية: تحسين CV، كتابة محتوى، إعلانات، رسائل رسمية، خطط دراسة، وأفكار مشاريع — بلغة عربية سهلة وواضحة.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mt-10">
+        <a href="#prompts" class="bg-fuchsia-600 hover:bg-fuchsia-700 px-8 py-4 rounded-2xl font-extrabold">ابدأ بالبرومبتات</a>
+        <a href="#pricing" class="border border-zinc-700 hover:border-fuchsia-500 px-8 py-4 rounded-2xl font-extrabold">شاهد الباقات</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mt-14">
+        <div class="glass rounded-2xl p-5"><div class="text-3xl font-black text-fuchsia-300">+60</div><div class="text-zinc-400 text-sm mt-1">برومبت جاهز</div></div>
+        <div class="glass rounded-2xl p-5"><div class="text-3xl font-black text-fuchsia-300">8</div><div class="text-zinc-400 text-sm mt-1">مجالات رئيسية</div></div>
+        <div class="glass rounded-2xl p-5"><div class="text-3xl font-black text-fuchsia-300">نسخ</div><div class="text-zinc-400 text-sm mt-1">بضغطة واحدة</div></div>
+        <div class="glass rounded-2xl p-5"><div class="text-3xl font-black text-fuchsia-300">خدمات</div><div class="text-zinc-400 text-sm mt-1">جاهزة للطلب</div></div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 pb-10">
+      <div class="glass rounded-3xl p-5 flex items-center gap-4">
+        <span class="text-2xl">🔍</span>
+        <input id="searchInput" type="text" placeholder="ابحث: CV، تسويق، طالب، إنستغرام، إيميل، مشروع..." class="bg-transparent outline-none flex-1 text-white placeholder-zinc-500" onkeyup="searchPrompts()" />
+      </div>
+    </section>
+
+    <section id="prompts" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl md:text-4xl font-black mb-3">مكتبة البرومبتات</h2>
+      <p class="text-zinc-400 mb-10">انسخ البرومبت واستخدمه مباشرة في ChatGPT أو أي أداة ذكاء اصطناعي.</p>
+      <div id="promptGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="وظائف تحسين السيرة الذاتية ats راجع السيرة الذاتية وحسّنها لتناسب أنظمة الفرز.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">وظائف</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">تحسين السيرة الذاتية ATS</h3>
+      <p class="text-zinc-400 mt-3 leading-7">راجع السيرة الذاتية وحسّنها لتناسب أنظمة الفرز.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="تصرف كخبير توظيف وATS. راجع السيرة الذاتية التالية، وحسّن الصياغة لتكون احترافية وبشرية ومناسبة لأنظمة ATS، مع الحفاظ على صدق الخبرات وعدم إضافة أي خبرة غير حقيقية.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="وظائف خطاب تقديم لوظيفة cover letter مختصر ومقنع حسب الإعلان.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">وظائف</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">خطاب تقديم لوظيفة</h3>
+      <p class="text-zinc-400 mt-3 leading-7">Cover Letter مختصر ومقنع حسب الإعلان.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب خطاب تقديم احترافي ومختصر للوظيفة التالية، يربط خبراتي بمتطلبات الإعلان، ويكون طبيعيًا وغير مبالغ فيه، مع نبرة واثقة ومحترمة.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="وظائف تحضير مقابلة عمل أسئلة وإجابات متوقعة حسب الوظيفة.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">وظائف</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">تحضير مقابلة عمل</h3>
+      <p class="text-zinc-400 mt-3 leading-7">أسئلة وإجابات متوقعة حسب الوظيفة.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="تصرف كمدرب مقابلات عمل. اسألني أسئلة مقابلة متوقعة لهذه الوظيفة، ثم قيّم إجاباتي، واقترح صياغة أقوى وأكثر مهنية دون مبالغة.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="طلاب شرح درس مبسط شرح واضح مع أمثلة وأسئلة تدريبية.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">طلاب</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">شرح درس مبسط</h3>
+      <p class="text-zinc-400 mt-3 leading-7">شرح واضح مع أمثلة وأسئلة تدريبية.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اشرح لي هذا الدرس كأنني طالب مبتدئ. استخدم لغة بسيطة، أمثلة متدرجة، ملخصًا قصيرًا، ثم 5 أسئلة تدريبية مع الإجابات.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="طلاب خطة مذاكرة أسبوعية تنظيم وقت المذاكرة بطريقة عملية.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">طلاب</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">خطة مذاكرة أسبوعية</h3>
+      <p class="text-zinc-400 mt-3 leading-7">تنظيم وقت المذاكرة بطريقة عملية.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اصنع لي خطة مذاكرة أسبوعية بناءً على المواد التالية، الوقت المتاح يوميًا، ومستوى الصعوبة. اجعل الخطة عملية ومتوازنة مع مراجعة واختبار قصير.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="معلمون تحضير درس احترافي أهداف وتمهيد ونشاط وتقويم.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">معلمون</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">تحضير درس احترافي</h3>
+      <p class="text-zinc-400 mt-3 leading-7">أهداف وتمهيد ونشاط وتقويم.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="حضّر لي درسًا تعليميًا حول الموضوع التالي، يتضمن أهدافًا تعليمية، تمهيدًا، شرحًا، نشاطًا صفيًا، أسئلة تقويم، واجبًا منزليًا، وتمايزًا للطلاب الضعاف والمتقدمين.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="تسويق إعلان منتج أو خدمة إعلان جذاب للسوشيال أو واتساب.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">تسويق</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">إعلان منتج أو خدمة</h3>
+      <p class="text-zinc-400 mt-3 leading-7">إعلان جذاب للسوشيال أو واتساب.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب إعلانًا تسويقيًا جذابًا للخدمة أو المنتج التالي، مع عنوان قوي، فوائد واضحة، معالجة اعتراضات العميل، ودعوة لاتخاذ إجراء.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="محتوى أفكار ريلز لمدة شهر 30 فكرة قصيرة وقابلة للتنفيذ.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">محتوى</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">أفكار ريلز لمدة شهر</h3>
+      <p class="text-zinc-400 mt-3 leading-7">30 فكرة قصيرة وقابلة للتنفيذ.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اقترح لي 30 فكرة ريلز أو تيك توك في المجال التالي، مع Hook قوي لكل فيديو، وصف مختصر، وCTA مناسب، واجعل الأفكار سهلة التنفيذ.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="كتابة كتابة مقال احترافي مقال منظم بعناوين وأمثلة.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">كتابة</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">كتابة مقال احترافي</h3>
+      <p class="text-zinc-400 mt-3 leading-7">مقال منظم بعناوين وأمثلة.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب مقالًا احترافيًا حول الموضوع التالي. اجعله منظمًا بمقدمة، عناوين فرعية، أمثلة عملية، نقاط واضحة، وخاتمة مختصرة.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="ترجمة ترجمة طبيعية ترجمة غير حرفية وتحافظ على المعنى.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">ترجمة</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">ترجمة طبيعية</h3>
+      <p class="text-zinc-400 mt-3 leading-7">ترجمة غير حرفية وتحافظ على المعنى.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="ترجم النص التالي ترجمة طبيعية واحترافية، مع الحفاظ على المعنى والنبرة، وتجنب الترجمة الحرفية. ثم اقترح نسخة أكثر سلاسة إن لزم.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="رسائل إيميل رسمي صياغة إيميل مهني واضح.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">رسائل</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">إيميل رسمي</h3>
+      <p class="text-zinc-400 mt-3 leading-7">صياغة إيميل مهني واضح.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب إيميلًا رسميًا حول الموضوع التالي. اجعله واضحًا، محترمًا، مختصرًا، ويحتوي على طلب محدد وخاتمة مهنية.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="أعمال خطة مشروع صغير فكرة، جمهور، عرض، تسعير.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">أعمال</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">خطة مشروع صغير</h3>
+      <p class="text-zinc-400 mt-3 leading-7">فكرة، جمهور، عرض، تسعير.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="ساعدني في بناء خطة مشروع صغير للفكرة التالية. حلل الجمهور المستهدف، المشكلة، العرض، التسعير، قنوات التسويق، أول 7 خطوات تنفيذية، والمخاطر المحتملة.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="عملاء رد على عميل غاضب رد مهني يحافظ على العميل.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">عملاء</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">رد على عميل غاضب</h3>
+      <p class="text-zinc-400 mt-3 leading-7">رد مهني يحافظ على العميل.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب ردًا مهنيًا وهادئًا على رسالة العميل التالية. اعترف بالمشكلة، اعتذر دون مبالغة، قدم حلًا واضحًا، وحافظ على نبرة محترمة.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="تصميم برومبت صورة ai وصف احترافي لصورة مولدة بالذكاء الاصطناعي.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">تصميم</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">برومبت صورة AI</h3>
+      <p class="text-zinc-400 mt-3 leading-7">وصف احترافي لصورة مولدة بالذكاء الاصطناعي.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب برومبت صورة احترافي بالإنجليزية للمشهد التالي، مع وصف دقيق للشخصيات، الخلفية، الإضاءة، زاوية الكاميرا، الأسلوب البصري، والجودة، وتجنب التشوهات.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="فيديو برومبت فيديو قصير تحويل فكرة إلى فيديو 5-8 ثوانٍ.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">فيديو</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">برومبت فيديو قصير</h3>
+      <p class="text-zinc-400 mt-3 leading-7">تحويل فكرة إلى فيديو 5-8 ثوانٍ.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اكتب برومبت فيديو قصير مدته 5-8 ثوانٍ للمشهد التالي، مع حركة كاميرا ناعمة، تفاصيل الإضاءة، وصف الحركة، الأسلوب، وتعليمات منع التشوهات أو تغيير الوجه.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="تنظيم تنظيم البيت روتين أسبوعي بسيط وممكن التنفيذ.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">تنظيم</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">تنظيم البيت</h3>
+      <p class="text-zinc-400 mt-3 leading-7">روتين أسبوعي بسيط وممكن التنفيذ.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="اصنع لي جدولًا أسبوعيًا لتنظيم البيت والمهام اليومية، مع توزيع منطقي للمهام، وقت للراحة، وقائمة بسيطة للمتابعة اليومية.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="ميزانية تنظيم الميزانية الشهرية تقسيم الدخل والمصاريف وخطة توفير.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">ميزانية</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">تنظيم الميزانية الشهرية</h3>
+      <p class="text-zinc-400 mt-3 leading-7">تقسيم الدخل والمصاريف وخطة توفير.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="ساعدني في تنظيم ميزانيتي الشهرية. سأعطيك الدخل والمصاريف والالتزامات، وأريد خطة عملية للتقليل من الهدر، ترتيب الأولويات، وتحديد مبلغ توفير واقعي.">نسخ البرومبت</button>
+    </article>
+    
+    <article class="prompt-card glass soft-card rounded-3xl p-6" data-keywords="إنتاجية خطة يوم إنتاجي تنظيم اليوم حسب الأولويات.">
+      <div class="flex items-center justify-between gap-3">
+        <span class="tag rounded-full px-3 py-1 text-xs">إنتاجية</span>
+        <span class="text-zinc-500 text-xs">جاهز للنسخ</span>
+      </div>
+      <h3 class="prompt-title text-xl font-extrabold mt-4">خطة يوم إنتاجي</h3>
+      <p class="text-zinc-400 mt-3 leading-7">تنظيم اليوم حسب الأولويات.</p>
+      <button class="copy-btn mt-6 w-full bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold" onclick="copyPrompt(this)" data-prompt="ساعدني في تنظيم يومي. هذه مهامي ووقتي المتاح ومستوى طاقتي. رتّب الأولويات، اقترح جدولًا عمليًا، وحدد أهم 3 مهام يجب إنجازها اليوم.">نسخ البرومبت</button>
+    </article>
+    
+      </div>
+    </section>
+
+    <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl md:text-4xl font-black mb-3">الخدمات</h2>
+      <p class="text-zinc-400 mb-10">خدمات بسيطة وواضحة يمكن طلبها مباشرة عبر واتساب.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass soft-card rounded-3xl p-7"><div class="text-4xl mb-4">💼</div><h3 class="text-2xl font-black">خدمات التوظيف</h3><p class="text-zinc-400 leading-8 mt-3">تحسين CV، خطاب تقديم، رسائل تقديم، وتجهيز مقابلة عمل.</p></div>
+        <div class="glass soft-card rounded-3xl p-7"><div class="text-4xl mb-4">📱</div><h3 class="text-2xl font-black">خدمات المحتوى</h3><p class="text-zinc-400 leading-8 mt-3">أفكار ريلز، كابشنات، نصوص إعلانية، وخطة محتوى شهرية.</p></div>
+        <div class="glass soft-card rounded-3xl p-7"><div class="text-4xl mb-4">🏪</div><h3 class="text-2xl font-black">خدمات الأعمال</h3><p class="text-zinc-400 leading-8 mt-3">وصف منتجات، ردود عملاء، خطط مشاريع صغيرة، ورسائل رسمية.</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl md:text-4xl font-black mb-3">باقات مبدئية</h2>
+      <p class="text-zinc-400 mb-10">الأسعار يمكن تعديلها لاحقًا حسب السوق والطلب.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass soft-card rounded-3xl p-7">
+          <h3 class="text-2xl font-black">Basic</h3>
+          <p class="text-zinc-400 mt-2">برومبت مخصص أو رسالة واحدة</p>
+          <div class="text-4xl font-black my-6">25 QAR</div>
+          <a href="https://wa.me/97451257513" target="_blank" class="block text-center bg-zinc-800 hover:bg-zinc-700 rounded-xl py-3 font-bold">اطلب الآن</a>
+        </div>
+        <div class="glass soft-card rounded-3xl p-7 border-fuchsia-500">
+          <div class="tag inline-block rounded-full px-3 py-1 text-xs mb-3">الأكثر مناسبة للبداية</div>
+          <h3 class="text-2xl font-black">Standard</h3>
+          <p class="text-zinc-400 mt-2">CV أو Cover Letter أو 10 أفكار محتوى</p>
+          <div class="text-4xl font-black my-6">75 QAR</div>
+          <a href="https://wa.me/97451257513" target="_blank" class="block text-center bg-fuchsia-600 hover:bg-fuchsia-700 rounded-xl py-3 font-bold">اطلب الآن</a>
+        </div>
+        <div class="glass soft-card rounded-3xl p-7">
+          <h3 class="text-2xl font-black">Premium</h3>
+          <p class="text-zinc-400 mt-2">خطة محتوى أو باقة توظيف كاملة</p>
+          <div class="text-4xl font-black my-6">150 QAR</div>
+          <a href="https://wa.me/97451257513" target="_blank" class="block text-center bg-zinc-800 hover:bg-zinc-700 rounded-xl py-3 font-bold">اطلب الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-3xl md:text-4xl font-black mb-10">أسئلة شائعة</h2>
+      <div class="space-y-4">
+        <details class="glass rounded-2xl p-5"><summary class="font-bold cursor-pointer">هل البرومبتات مجانية؟</summary><p class="text-zinc-400 mt-3 leading-8">نعم، المكتبة الحالية مجانية، مع إمكانية طلب خدمة مخصصة مدفوعة.</p></details>
+        <details class="glass rounded-2xl p-5"><summary class="font-bold cursor-pointer">هل يمكن طلب CV أو رسالة تقديم؟</summary><p class="text-zinc-400 mt-3 leading-8">نعم، يمكن إرسال التفاصيل عبر واتساب وسيتم تجهيز نص مناسب حسب الحاجة.</p></details>
+        <details class="glass rounded-2xl p-5"><summary class="font-bold cursor-pointer">هل الخدمة باللغة العربية فقط؟</summary><p class="text-zinc-400 mt-3 leading-8">يمكن العمل بالعربية والإنجليزية حسب نوع الطلب.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
+      <div class="glass rounded-[2rem] p-10 md:p-14 text-center">
+        <h2 class="text-3xl md:text-4xl font-black">تواصل مع Mema AI</h2>
+        <p class="text-zinc-300 leading-8 mt-4">للطلبات المخصصة، السير الذاتية، المحتوى، أو البرومبتات الخاصة.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-9 text-sm">
+          <a href="https://wa.me/97451257513" target="_blank" class="glass rounded-2xl p-4 hover:border-green-500">📱<br>+974 5125 7513</a>
+          <a href="mailto:mema.ai.2504@gmail.com" class="glass rounded-2xl p-4 hover:border-fuchsia-500">📧<br>mema.ai.2504@gmail.com</a>
+          <a href="https://www.instagram.com/mema.ai.2504" target="_blank" class="glass rounded-2xl p-4 hover:border-pink-500">📸<br>Instagram</a>
+          <a href="https://www.tiktok.com/@mema.ai2" target="_blank" class="glass rounded-2xl p-4 hover:border-zinc-300">🎵<br>TikTok</a>
+          <a href="https://www.facebook.com/share/1D73Swbwiy/" target="_blank" class="glass rounded-2xl p-4 hover:border-blue-500">📘<br>Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-800 py-8 text-center text-zinc-500">© 2026 Mema AI — برومبتات وخدمات ذكاء اصطناعي بالعربي</footer>
+
+  <script>
+    function copyPrompt(button) {
+      const promptText = button.getAttribute("data-prompt");
+      navigator.clipboard.writeText(promptText).then(() => {
+        const oldText = button.textContent;
+        button.textContent = "✓ تم النسخ";
+        button.classList.remove("bg-fuchsia-600", "hover:bg-fuchsia-700");
+        button.classList.add("bg-green-600");
+        setTimeout(() => {
+          button.textContent = oldText;
+          button.classList.remove("bg-green-600");
+          button.classList.add("bg-fuchsia-600", "hover:bg-fuchsia-700");
+        }, 1600);
+      });
+    }
+
+    function searchPrompts() {
+      const input = document.getElementById("searchInput").value.toLowerCase().trim();
+      const cards = document.querySelectorAll(".prompt-card");
+      cards.forEach(card => {
+        const title = card.querySelector(".prompt-title").textContent.toLowerCase();
+        const keywords = card.getAttribute("data-keywords").toLowerCase();
+        const text = card.textContent.toLowerCase();
+        card.style.display = title.includes(input) || keywords.includes(input) || text.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
